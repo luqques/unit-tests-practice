@@ -2,24 +2,24 @@
 {
     public class Calculadora
     {
-        public Soma Somar(int n1, int n2)
+        public Soma SomarDoisNumeros(int n1, int n2)
         {
-            return new Soma(n1, n2, '+');
+            return new Soma(n1, n2);
         }
 
-        public int Subtrair(int n1, int n2)
+        public static Subtracao Subtrair(int n1, int n2)
         {
-            return n1 - n2;
+            return new Subtracao();
         }
 
-        public int Multiplicar(int n1, int n2)
+        public static Multiplicacao Multiplicar(int n1, int n2)
         {
-            return n1 * n2;
+            return new Multiplicacao();
         }
 
-        public int Dividir(int n1, int n2)
+        public static Divisao Dividir(int n1, int n2)
         {
-            return n1 / n2;
+            return new Divisao();
         }
     }
 }

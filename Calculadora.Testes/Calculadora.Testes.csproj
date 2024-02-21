@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Calculadora.Service\Calculadora.Service.csproj" />
     <ProjectReference Include="..\Calculadora\Calculadora.csproj" />
   </ItemGroup>
 

@@ -7,7 +7,11 @@ namespace Calculadora.Testes
         [Fact]
         public void Somar()
         {
-            Assert.Equal(20, Calculadora.Somar(10, 10));
+            int n1 = 1;
+            int n2 = 2;
+            var soma = new Soma(n1, n2);
+
+            Assert.Equal(soma, Calculadora.SomarDoisNumeros(n1, n2));
         }
 
         [Fact]

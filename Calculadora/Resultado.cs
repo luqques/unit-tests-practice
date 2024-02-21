@@ -4,11 +4,11 @@ namespace Calculadora
 {
     public class Resultado
     {
-        public string msgError = "Resultado deve ser maior que zero!!";
+        private string msgError = "Resultado deve ser maior que zero!!";
 
-        Resultado(int calculo)
+        Resultado(int resultado)
         {
-            if (calculo <= 0)
+            if (resultado <= 0)
             {
                 throw new Exception(msgError);
             }
